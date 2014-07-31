@@ -1,0 +1,17 @@
+<h1>Logar</h1>
+<% if flash[:alert] %>
+<div class="alert"><%=flash[:alert] %></div>
+<%end%>
+<form method="POST" action="<%= sessions_path %>">
+	<div class="field">
+		<label for="nome">nome</label>
+		<input type="text" name="nome" id="nome"/>
+	</div>
+	<div class="field">
+		<label for="senha">Senha</label>
+		<input type="password" name="senha" id="senha"/>
+	</div>
+	<div class="field">
+		<input type="submit" value="Logar"/>
+	</div>
+</form>

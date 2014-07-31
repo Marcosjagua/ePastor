@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EPastor</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1> Gerenciamento de Igrejas Evagelicas</h1>
+		</header>
+		<section id="content">
+
+			<%= yield %>
+			
+		</section>
+		<footer>
+			Exemplo do Livro do Urubatan
+		</footer>
+		
+	</div>
+</body>
+</html>
